@@ -13,7 +13,7 @@ public class ModItems {
         DeferredRegister.create(ForgeRegistries.ITEMS, MercysUtils.MOD_ID);
 
     public static final RegistryObject<Item> RAW_MERCINIUM = ITEMS.register("raw_mercinium", 
-        () -> new Item(new Item.Properties()));
+        () -> new Item(new Item.Properties().setId(ITEMS.key("raw_mercinium"))));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
